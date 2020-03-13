@@ -1,6 +1,6 @@
 server {
    listen       80;
-   server_name  admin.inewgent.local admin.inewgent.com;
+   server_name  api-node.inewgent.local api-node.inewgent.com;
 
    #charset koi8-r;
    #access_log  /var/log/nginx/log/host.access.log  main;
@@ -8,7 +8,7 @@ server {
    location / {
        root   /usr/share/nginx/html;
        index  index.html index.htm;
-       proxy_pass http://inewgent_admin:1337;
+       proxy_pass http://inewgent_api_node:5000;
    }
 }
 
