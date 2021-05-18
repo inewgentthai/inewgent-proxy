@@ -7,6 +7,7 @@ services:
     volumes:
       - ./nginx/conf.d/inewgent-my.conf:/etc/nginx/conf.d/inewgent-my.conf
       - ./nginx/conf.d/inewgent-api.conf:/etc/nginx/conf.d/inewgent-api.conf
+      - ./nginx/conf.d/inewgent-www.conf:/etc/nginx/conf.d/inewgent-www.conf
     ports:
       - "80:80"
     networks:
